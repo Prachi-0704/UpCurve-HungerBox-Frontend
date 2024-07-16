@@ -1,0 +1,17 @@
+.about-us-page {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+.about-us-page h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.about-us-page p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+}
