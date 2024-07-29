@@ -1,0 +1,144 @@
+/* Styling for the entire login page */
+.login_page {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    /* Apply blur effect */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent background */
+    z-index: 1000;
+    /* Ensure it's on top of other content */
+}
+
+/* Styling for the form container */
+.form-container {
+    width: 350px;
+    /* Same width as register form */
+    background-color: rgb(224, 223, 223, 0.8);
+    /* Same background color as register form */
+    padding: 30px;
+    /* Same padding as register form */
+    border-radius: 10px;
+    /* Same rounded corners as register form */
+    border: 1px solid #0b0b0b;
+    /* Same border style as register form */
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.1);
+    /* Same box-shadow as register form */
+    position: relative;
+    z-index: 2;
+    /* Ensure it is above the blurred background */
+    text-align: center;
+    /* Center text */
+}
+
+/* Header styling */
+.form-container h1 {
+    margin-bottom: 20px;
+    /* Spacing below header */
+    color: black;
+    /* Same text color as register form */
+}
+
+/* Styling for input boxes */
+.input_box {
+    margin-bottom: 15px;
+    /* Space between input fields */
+}
+
+.input_box input {
+    width: 100%;
+    /* Full width */
+    padding: 10px;
+    /* Same padding as register form inputs */
+    border: 1px solid #060000;
+    /* Same border style */
+    border-radius: 4px;
+    /* Same rounded corners */
+    box-sizing: border-box;
+    /* Include padding in width */
+    font-size: 1rem;
+    /* Font size for better readability */
+}
+
+.input_box input:focus {
+    outline: 2px solid #007bff;
+    /* Same focus outline color */
+}
+
+/* Styling for the forgot password link */
+.forgot_password {
+    margin-bottom: 15px;
+    /* Space below the link */
+}
+
+.forgot_password a {
+    color: #007bff;
+    /* Blue color for links */
+    text-decoration: none;
+    /* Remove underline */
+    font-size: 0.875rem;
+    /* Slightly smaller font size */
+}
+
+.forgot_password a:hover {
+    text-decoration: underline;
+    /* Underline on hover */
+}
+
+/* Styling for the submit button */
+.button button {
+    width: 100%;
+    /* Full width */
+    padding: 10px;
+    /* Same padding as register button */
+    background-color: #e92828;
+    /* Red background */
+    border: none;
+    /* Remove default border */
+    border-radius: 4px;
+    /* Rounded corners */
+    color: white;
+    /* White text color */
+    font-size: 1.1rem;
+    /* Font size for button text */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    transition: background-color 0.3s;
+    /* Smooth background color transition */
+}
+
+.button button:hover {
+    background-color: #d00000;
+    /* Darker red on hover */
+}
+
+/* Styling for the register link section */
+.register {
+    margin-top: 1rem;
+    /* Space above the register link section */
+}
+
+.register p {
+    margin: 0;
+    /* Remove default margin */
+    font-size: 0.875rem;
+    /* Slightly smaller font size */
+}
+
+.register a {
+    color: #007bff;
+    /* Blue color for links */
+    text-decoration: none;
+    /* Remove underline */
+}
+
+.register a:hover {
+    text-decoration: underline;
+    /* Underline on hover */
+}

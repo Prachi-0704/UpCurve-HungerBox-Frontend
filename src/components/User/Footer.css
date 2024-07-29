@@ -1,0 +1,102 @@
+/*--------------------------------------------------------------
+# Footer Section
+--------------------------------------------------------------*/
+.footer {
+    background-color: #222;
+    /* Dark background for footer */
+    color: #f8f9fa;
+    /* Light text color for contrast */
+    padding: 40px 0;
+    font-size: 14px;
+}
+
+.footer .icon {
+    font-size: 24px;
+    margin-right: 15px;
+    color: #f8f9fa;
+}
+
+.footer h4 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.footer p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+.footer .address p {
+    margin-bottom: 5px;
+}
+
+.footer .social-links a {
+    color: #f8f9fa;
+    font-size: 18px;
+    margin-right: 15px;
+    transition: color 0.3s;
+}
+
+.footer .social-links a:hover {
+    color: #007bff;
+    /* Change to your desired hover color */
+}
+
+.footer .credits a {
+    color: #f8f9fa;
+    transition: color 0.3s;
+}
+
+.footer .credits a:hover {
+    color: #007bff;
+    /* Change to your desired hover color */
+}
+
+.footer .copyright {
+    margin-top: 30px;
+    font-size: 12px;
+}
+
+.footer .copyright .sitename {
+    font-weight: 700;
+}
+
+#scroll-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #007bff;
+    /* Background color for the scroll-to-top button */
+    color: #fff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    font-size: 20px;
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+#scroll-top:hover {
+    background: #0056b3;
+    /* Hover color for the scroll-to-top button */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    /* Background color for the preloader */
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

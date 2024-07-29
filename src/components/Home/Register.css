@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Styling for the register page with blurred background */
+.register_page {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    /* Apply blur effect */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent background */
+    z-index: 1000;
+    /* Ensure it's on top of other content */
+}
+
+/* Styling for the form container */
+.form-container {
+    width: 350px;
+    background-color: hsl(30, 14%, 97%);
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 2;
+    /* Ensure it is above the blurred background */
+}
+
+/* Header styling */
+.form-container h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: black;
+}
+
+/* Styling for input and select fields */
+.inputGroup {
+    margin-bottom: 0;
+    /* Remove bottom margin to eliminate gaps */
+}
+
+.inputGroup input,
+.inputGroup select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    /* Add margin between input fields */
+}
+
+.inputGroup input:focus,
+.inputGroup select:focus {
+    outline: 2px solid #007bff;
+}
+
+/* Styling for the submit button */
+.inputGroup button {
+    margin-top: 20px;
+    /* Space above the button */
+    width: 100%;
+    padding: 10px;
+    background-color: #e92828;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.inputGroup button:hover {
+    background-color: #d00000;
+}
+
+/* Additional styling for messages */
+.message {
+    text-align: center;
+    margin-top: 20px;
+    color: black;
+    /* Set a default color for messages */
+}
