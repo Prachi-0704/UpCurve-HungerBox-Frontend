@@ -1,11 +1,13 @@
+ // - - - - - - - - - - - - - - - -   U S E R P A G E   ( F O R   C U S T O M E R S   O N L Y   A F T E R   LO G I N )   - - - - - - - 
+
 import React, { useState } from "react";
-import Header from "../components/User/Header";
-import HeroSection from "../components/Home/HeroSection";
-import Vendor from "../components/User/Vendor";
-import MenuSection from "../components/User/MenuSection";
-import ChefsSection from "../components/Home/ChefsSection";
-import AboutSection from "../components/Home/AboutSection";
-import Footer from "../components/Home/Footer";
+import Header from "../components/User/Header/Header";
+import HeroSection from "../components/HeroSection/HeroSection";
+import Vendor from "../components/User/VendorSection/Vendor";
+import MenuSection from "../components/User/MenuSection/MenuSection";
+import ChefsSection from "../components/ChefsSection/ChefsSection";
+import AboutSection from "../components/AboutSection/AboutSection";
+import Footer from "../components/Footer/Footer";
 
 const UserPage = () => {
   const [selectedVendor, setSelectedVendor] = useState(null);
@@ -28,10 +30,12 @@ const UserPage = () => {
         updateCartItemCount={setCartItemCount}
       />
       <HeroSection />
-      <Vendor
-        selectedVendor={selectedVendor}
-        onSelectVendor={handleSelectVendor}
-      />
+      <section id="vendor">
+        <Vendor
+          selectedVendor={selectedVendor}
+          onSelectVendor={handleSelectVendor}
+        />
+      </section>
       <MenuSection selectedVendor={selectedVendor} onAddItem={handleAddItem} />
       <AboutSection />
       <ChefsSection />
